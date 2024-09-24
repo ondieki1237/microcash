@@ -74,7 +74,7 @@ const Microfinance = mongoose.model('Microfinance', MicrofinanceSchema);
 // Signup Route
 router.post('/signup', async (req, res) => {
     const { microfinanceName, microfinanceNumber, numberOfMembers, location, password, confirmPassword } = req.body;
-
+   console.log(req.body);
     try {
         // Check if the microfinance account already exists
         const existingMicrofinance = await Microfinance.findOne({ microfinanceNumber });
@@ -99,7 +99,7 @@ router.post('/signup', async (req, res) => {
 
         // Save the new microfinance account to the database
         await newMicrofinance.save();
-
+         console.log(newMicrofinance);
         res.status(201).json({ message: 'Microfinance account created successfully' });
     } catch (err) {
         res.status(500).json({ message: 'Server error', error: err.message });
@@ -410,6 +410,6 @@ const MemberLoanSchema = new mongoose.Schema({
   const MemberLoan = mongoose.model('MemberLoan', MemberLoanSchema);
 
 
-  
+
 
 module.exports = router;
