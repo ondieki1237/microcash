@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --primary-color: #13072e;
+    --gradient: linear-gradient(135deg, #150d2b, #2a235a);
+    --purple: #2a235a;
+    --black: #150d2b;
+    --font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sectionWrapper{
+    /* border: 5px solid red; */
+    width: 100%;
+    min-height: 100vh;
+}
+
+.heroSection{
+    /* border: 5px solid blue; */
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(microcash/images/Home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navSection{
+    /* border: 5px solid green; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoDiv{
+    /* border: 5px dotted green;  */
+
+    width: fit-content;
+}
+
+.logoImage{
+    width: 20rem;
+    height: 10rem;
+}
+
+.navButtonDiv{
+    /* border: 2px solid red; */
+    width: fit-content;
+    margin-right: 5rem;
+}
+
+.navButtonUl{
+    /* border: 5px solid purple; */
+
+    list-style: none; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 0;
+    position: relative;
+}
+
+.navButtonLinks{
+    text-decoration: none;
+    color: white;
+    margin-right: 3rem;
+
+    padding: 10px 0;
+    position: relative;
+    overflow: hidden; 
+
+    outline: none; 
+}
+
+.navButtonLinks::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--purple); 
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.navButtonLinks:hover::after,
+.navButtonLinks:focus::after {
+    transform: translateX(0); 
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(-2px);
+    }
+}
+
+.navButtonLinks:hover {
+    animation: bounce 0.5s;
+}
+
+.navButtonLinks:hover .navButtonLi {
+    animation: bounce 0.5s;
+    color: var(--purple);
+}
+
+.navButtonLi{
+    font-size: 1.2rem;
+    padding: 0.2rem 0.4rem;
+    font-weight: 600;
+
+    position: relative;
+    transition: linear .2s;
+}
+
+.heroSectionDiv{
+    /* border: 5px solid red; */
+
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.heroImageDiv{
+    /* border: 5px solid blue; */
+
+    width: 40%;
+    margin-left: 5rem;
+}
+
+.heroImageImg{
+    /* border: 5px solid green; */
+
+    width: 100%;
+    height: 100%;
+}
+
+
+#signup-page {
+    background-color: white;
+    width: 400px;
+    height: fit-content;
+    padding: 10px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10rem;
+}
+
+.microAccCreate {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--purple);
+    font-weight: 1000;
+}
+
+.box {
+    margin-bottom: 0.5rem;
+}
+
+.microAccInputLabel{
+    font-size: 0.8rem;
+}
+
+.microAccInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.microAccInput:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.submit_signup {
+    width: 100%;
+    padding: 12px;
+    background: var(--gradient);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+    transition:  0.3s ease;
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.submit_signup:hover {
+    background: white;
+    color: var(--gradient);
+    outline: 1px solid var(--purple);
+}
