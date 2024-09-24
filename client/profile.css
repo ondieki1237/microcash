@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #13072e;
+    --gradient: linear-gradient(135deg, #150d2b, #2a235a);
+    --purple: #2a235a;
+    --black: #150d2b;
+    --font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.profileWrapper{
+    /* border: 5px solid red; */
+
+    min-height: 100vh;
+    background-image: url(images/profileBackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.individualProfile{
+    /* border: 5px solid blue; */
+
+    height: 100vh;
+}
+
+.profileLogoDiv{
+    /* border: 5px solid green; */
+
+    text-align: center;
+}
+
+.profileLogo{
+    height: 8rem;
+    width: 15rem;
+}
+
+.profileBody{
+    /* border: 5px solid green; */
+
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 83%;
+}
+
+.profileContent{
+    /* border: 5px solid blue; */
+}
+
+.profileNav{
+    /* border: 5px solid red; */
+    background: rgba(0, 0, 0, 0.086);
+}
+
+.iconul li{
+    /* border: 5px solid blue; */
+    text-align: center;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.navLink{
+    height: 2rem;
+    width: 5rem;
+}
+
+.navPic{
+    height: 6rem;
+    width: 8rem;
+}
+
+.iconul li p{
+    color: white;
+    font-weight: 800;
+}
+
+
+.headerIcon{
+    /* border: 5px solid red; */
+    
+    text-align: center;
+}
+
+.myProfileH2{
+    color: white;
+}
+
+.myProfileIcon{
+    color: var(--purple);
+    font-size: 3rem;
+}
+
+.profileDetailArea{
+    /* border: 5px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.profileDetailP{
+    color: white;
+    margin: 2rem auto;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+
+.loansDispaly{
+    /* border: 5px solid red; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loansDetailArea{
+    /* border: 5px solid blue; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    height: fit-content;
+    row-gap: 5rem;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.typeLoanDiv{
+    /* border: 5px solid green; */
+
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--gradient);
+    border-radius: 15px;
+    transition: ease-in .2s;
+}
+
+.typeLoanDiv:hover{
+    background: white;
+    cursor: pointer;
+}
+
+.typeLoanDiv:hover .typeLoanPara{
+    color: var(--purple);
+}
+
+.typeLoanPara{
+    color: white;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+
+
+
+.contributionDispaly{
+    /* border: 5px solid red; */
+}
+
+.contibutionDetailArea{
+    /* border: 5px solid blue; */
+
+    margin-top: 1rem;
+}
+
+.porchDiv{
+    /* border: 5px solid green; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.porch{
+    color: white;
+}
+
+.balance{
+    background: rgb(235, 10, 235);
+    padding: 0.5rem 0.7rem;
+    border-radius: 5%;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.ContributeBtn{
+    padding: 0.5rem 1rem; 
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+}
+
+.contibutionTable{
+    /* border: 5px solid purple; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;margin-top: 1rem;
+}
+
+.row {
+    display: table-row;
+}
+.cell {
+    display: table-cell;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    width: 10rem;
+}
+.header {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
