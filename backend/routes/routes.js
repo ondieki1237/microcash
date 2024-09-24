@@ -109,7 +109,7 @@ router.post('/signup', async (req, res) => {
 // Signin Route
 router.post('/signin', async (req, res) => {
     const { microfinanceNumber, password } = req.body;
-
+    console.log(microfinanceNumber, password);
     try {
         // Check if the microfinance account exists
         const microfinance = await Microfinance.findOne({ microfinanceNumber });
@@ -182,9 +182,9 @@ const MemberSchema = new mongoose.Schema({
   const Member = mongoose.model('Member', MemberSchema);
 
   // Sign Up Route
-router.post('/signup', async (req, res) => {
+router.post('/member_signup', async (req, res) => {
     try {
-      const { name, idNumber, phoneNumber, microNumber, password } = req.body;
+      const { name, idNumber, phoneNumber, microfinanceNumber, password } = req.body;
   
       // Check if member already exists
       const existingMember = await Member.findOne({ idNumber });
@@ -197,7 +197,7 @@ router.post('/signup', async (req, res) => {
         name,
         idNumber,
         phoneNumber,
-        microNumber,
+        microfinanceNumber,
         password,
       });
   
@@ -209,7 +209,7 @@ router.post('/signup', async (req, res) => {
   });
   
   // Sign In Route
-  router.post('/signin', async (req, res) => {
+  router.post('/member_signin', async (req, res) => {
     try {
       const { idNumber, password } = req.body;
   
