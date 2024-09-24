@@ -1,0 +1,23 @@
+.heroSection {
+    /* Assuming the heroSection is your container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#signup-page {
+    background-color: white;
+    width: 400px;
+    height: fit-content;
+    padding: 10px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Removed margin-right to center it */
+    margin: 0; 
+}
