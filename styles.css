@@ -1,10 +1,14 @@
-/* styles.css */
-
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+    background: url('sign\ up.png') no-repeat center center fixed;
+    background-size: cover;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #hero {
     height: 100vh;
