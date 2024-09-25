@@ -119,3 +119,85 @@
     border: none;
     outline: none;
 }
+
+.accrow {
+    display: table-row;
+}
+
+.acccell{
+    background: #f2f2f2;
+    width: 9rem;
+}
+
+.accheader, .acccell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.accheader {
+    font-weight: bold;
+    /* background-color: #f2f2f2; */
+    color: var(--purple);
+}
+
+.saccoMembrs{
+    /* border: 5px solid red; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.Actable {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Acrow {
+    display: table-row;
+}
+
+.loanTypeButtons{
+    padding: 0.2rem 0.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: var(--purple);
+    transition: ease-in .2s;
+    color: white;
+}
+
+.loanTypeButtons:Hover,.loanTypeButtons:focus{
+    background: white;
+    color: var(--purple);
+}
+
+.Acheader, .ACcell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+#cellHead{
+    background: white;
+    color: var(--purple);
+}
+
+.ACcell{
+    width: 9rem;
+    color: white;
+}
+
+.ACheader {
+    font-weight: bold;
+    /* background-color: #f2f2f2; */
+}
+.ACvote-buttons {
+    display: flex;
+    gap: 5px;
+}
