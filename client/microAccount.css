@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --primary-color: #13072e;
+    --gradient: linear-gradient(135deg, #150d2b, #2a235a);
+    --purple: #2a235a;
+    --black: #150d2b;
+    --font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.microAccountWrapper{
+    background-image: url(images/MICROFINANCE.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.microAccountWrapperSection{
+    /* border: 5px solid blue; */
+
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.accountDisplay{
+    /* border: 5px solid red; */
+}
+
+.accountNavs{
+    /* border: 5px solid green; */
+}
+
+.accBurgerNav{
+    background: black;
+    height: 100%;
+}
+
+.acciconul{
+    /* border: 5px solid red; */
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.acciconul li{
+    color : white;
+    text-align: center;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.accnavLink{
+    height: 2rem;
+    width: 5rem;
+}
+
+.accnavPic{
+    height: 6rem;
+    width: 8rem;
+}
+
+.acciconul li p{
+    color: white;
+    font-weight: 800;
+}
+
+.accnavLink{
+    height: 2rem;
+    width: 5rem; 
+}
+
+.accProfileDispaly{
+    /* border: 5px solid green; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    margin-left: 4rem;
+}
+
+.profileLogImg{
+    /* border: 5px solid red; */
+
+    text-align: center;
+}
+
+.accLogo{
+    height: 8rem;
+    width: 15rem;
+    background: black;
+    padding: 0rem 2rem;
+}
+
+.accProfileDetail{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.selectDrop{
+    width: 20rem;
+    height: 1.5rem;
+    border: none;
+    outline: none;
+}
