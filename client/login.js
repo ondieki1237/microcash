@@ -8,7 +8,7 @@ document.querySelector('.submit_signup').addEventListener('click', async (e) => 
 
     try {
       // Send a POST request to the /signin route
-      const response = await fetch('http://localhost:3000/api//signin', {
+      const response = await fetch('http://localhost:3000/api/signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -23,7 +23,7 @@ document.querySelector('.submit_signup').addEventListener('click', async (e) => 
       if (response.ok) {
         alert('Login successful');
         // You can redirect to a dashboard or another page if needed
-        window.location.href = '/dashboard'; // Example redirect
+        window.location.href = 'microAccount.html'; // Example redirect
       } else {
         alert(`Error: ${data.message}`);
       }
