@@ -25,7 +25,7 @@
       if (response.ok) {
         alert('Sign-in successful!');
         // Redirect to dashboard or another page if needed
-        window.location.href = '/dashboard'; // Example redirect
+        window.location.href = 'profile.html'; // Example redirect
       } else {
         alert(`Error: ${data.message}`);
       }

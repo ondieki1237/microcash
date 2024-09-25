@@ -35,6 +35,7 @@ document.querySelector('.submit_signup').addEventListener('click', async (e) => 
       const data = await response.json();
       if (response.ok) {
         alert('Microfinance account created successfully!');
+        window.location.href = 'microAccount.html';
       } else {
         alert(`Error: ${data.message}`);
       }
